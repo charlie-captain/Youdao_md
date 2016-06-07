@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/edit_search"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:animateLayoutChanges="true"
+        android:background="@drawable/back_ground"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/wordsearch_actionbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layoutAnimation="@anim/list_anim_layout"
+            android:visibility="gone">
+
+            <ImageButton
+                android:id="@+id/wordsearch_actionbar_cancel"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/back_cancel" />
+
+            <TextView
+                android:id="@+id/wordsearch_actionbar_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/wordsearch_actionbar_cancel"
+                android:layout_marginRight="50dp"
+                android:layout_marginStart="14dp"
+                android:layout_toEndOf="@+id/wordsearch_actionbar_cancel"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/wordsearch_actionbar_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/wordsearch_actionbar_delete"
+                android:layout_marginEnd="26dp"
+                android:layout_marginTop="2dp"
+                android:layout_toStartOf="@+id/wordsearch_actionbar_delete"
+                android:text="全选"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <ImageButton
+                android:id="@+id/wordsearch_actionbar_delete"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/wordsearch_actionbar_id"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/history_delete" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/translate"/>
+
+            <EditText
+                android:id="@+id/word_edit"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:hint="@string/search_edit"
+                android:imeOptions="actionSearch"
+                android:layout_toStartOf="@+id/word_search_btn_search"
+                android:layout_marginLeft="60dp"
+                android:layout_marginTop="2dp"
+                android:paddingTop="10dp"
+                android:maxLines="1"
+                android:textCursorDrawable="@null"
+                android:singleLine="true"
+                android:textColor="@color/white"
+                android:textColorHint="#767676"
+                android:textIsSelectable="false" />
+
+            <ImageButton
+                android:id="@+id/word_clear_edit"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_toStartOf="@+id/word_search_btn_search"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/clear_edit"
+                android:visibility="invisible" />
+
+            <ImageButton
+                android:id="@+id/word_search_btn_search"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_margin="10dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/search_red" />
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/word_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:divider="@color/listview_line"
+        android:dividerHeight="0.5dp"
+        android:layoutAnimation="@anim/list_anim_layout">
+
+    </ListView>
+
+    <include layout="@layout/word_search_showword" />
+
+</LinearLayout>

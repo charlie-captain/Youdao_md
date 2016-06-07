@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipChildren="false"
+    android:background="@color/main_ly"
+    android:theme="@style/Reciteword"
+    >
+        
+    <RelativeLayout
+        android:id="@+id/recite_word_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/light_blue"
+        
+        >
+        <ImageButton
+            android:id="@+id/listbook_recite_back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/back_cancel"
+            />
+
+
+        <TextView
+            android:id="@+id/listbook_recite_play"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="24sp"
+
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            />
+
+
+
+    </RelativeLayout>
+
+
+    <android.support.v4.view.ViewPager
+        android:animateLayoutChanges="true"
+        android:id="@+id/listbook_recite"
+        android:layout_width="match_parent"
+        android:layout_below="@+id/recite_word_toolbar"
+        android:layout_marginTop="25dp"
+        android:layout_height="400dp"
+        android:clipChildren="false"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        >
+    </android.support.v4.view.ViewPager>
+
+</RelativeLayout>

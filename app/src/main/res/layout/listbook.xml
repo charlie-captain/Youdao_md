@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:animateLayoutChanges="true"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/list_book_actionbar"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/back_ground"
+            android:visibility="gone">
+
+            <ImageButton
+                android:id="@+id/list_book_actionbar_cancel"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/back_cancel" />
+
+            <TextView
+                android:id="@+id/list_book_actionbar_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/list_book_actionbar_cancel"
+                android:layout_marginRight="50dp"
+                android:layout_marginStart="14dp"
+                android:layout_toEndOf="@+id/list_book_actionbar_cancel"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/list_book_actionbar_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/list_book_actionbar_delete"
+                android:layout_marginEnd="26dp"
+                android:layout_marginTop="2dp"
+                android:layout_toStartOf="@+id/list_book_actionbar_delete"
+                android:text="全选"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <ImageButton
+                android:id="@+id/list_book_actionbar_delete"
+                android:layout_width="26dp"
+                android:layout_height="26dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/list_book_actionbar_id"
+                android:layout_marginEnd="15dp"
+                android:background="@drawable/history_delete" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/list_book_line"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/list_book_image"
+                android:layout_marginTop="9dp"
+                android:background="@color/line" />
+
+            <ImageView
+                android:id="@+id/list_book_image"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="3dp"
+                android:background="@drawable/list_book" />
+
+            <TextView
+                android:id="@+id/list_book_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@+id/list_book_image"
+                android:text="@string/listbook"
+                android:textColor="@color/text_color"
+                android:textSize="20sp" />
+
+            <RelativeLayout
+                android:id="@+id/list_book_query"
+                android:layout_width="60dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:text="@string/query"
+                    android:textColor="@color/text_color"
+                    android:textSize="20sp" />
+
+                <ImageView
+                    android:layout_width="15dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    android:layout_marginTop="14dp"
+                    android:background="@drawable/expand_img" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/listbook_ly"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/main_ly"
+     >
+
+
+        <LinearLayout
+            android:id="@+id/listbook_noword"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            >
+
+            <ImageView
+                android:layout_width="350dp"
+                android:layout_height="250dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/listbook_noword" />
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/list_book"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layoutAnimation="@anim/list_anim_layout"
+            >
+
+        </ListView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:orientation="horizontal"
+            android:background="@color/white"
+            >
+
+            <TextView
+                android:id="@+id/listbook_recite"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/recite"
+                android:textColor="@color/text_color"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/listbook_hide"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/hide"
+                android:textColor="@color/text_color"
+                android:textSize="20sp" />
+
+        </LinearLayout>
+        
+    </LinearLayout>
+
+
+
+</LinearLayout>

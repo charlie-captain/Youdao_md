@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">词海</string>
+
+    <string name="search_main">词典</string>
+    <string name="sentence_main">翻译</string>
+    <string name="listbook_main">单词本</string>
+    <string name="settings_main">设置</string>
+    <string name="action_settings">多选</string>
+    <string name="select_item">已选择:</string>
+    <string name="action_select_all">全选</string>
+    <string name="no_word_here">无单词</string>
+    <string name="play_the_sentence">整句发音</string>
+    <string name="search_edit">请输入查询内容</string>
+    <string name="edit_your_word">在此输入要翻译的文本</string>
+    <string name="listbook">单词本</string>
+    <string name="query">排序</string>
+    <string name="recite">背单词</string>
+    <string name="hide">隐藏释义</string>
+    <string name="query_normal">默认</string>
+    <string name="query_char">字母</string>
+    <string name="learned">已经学会</string>
+    <string name="no_learned">还不会</string>
+    <string name="today_recite">今天已背</string>
+    <string name="word_counts">开始背单词</string>
+    <string name="notification">点击快速查词</string>
+    <string name="sentence_auto">自动检测语言</string>
+    <string name="settings">设置</string>
+    <string name="settings_fast">开启快速查词</string>
+    <string name="play_the_word">播放</string>
+
+
+</resources>

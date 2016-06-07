@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:animateLayoutChanges="true"
+    android:orientation="vertical"
+    android:background="@color/cool_bg">
+
+    <LinearLayout
+        android:id="@+id/pop_nomal_ly"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp">
+
+        <TextView
+            android:id="@+id/pop_nomal"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="7dp"
+            android:text="@string/query_normal"
+            android:textColor="@color/white"
+            android:textSize="21sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/pop_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/pop_nomal_ly"
+        android:background="@color/line" />
+
+    <LinearLayout
+        android:id="@+id/pop_character_ly"
+        android:layout_width="100dp"
+        android:layout_height="45dp"
+
+        android:layout_below="@+id/pop_line">
+
+        <TextView
+            android:id="@+id/pop_character"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="5dp"
+            android:text="@string/query_char"
+            android:textColor="@color/white"
+            android:textSize="21sp" />
+    </LinearLayout>
+
+</LinearLayout>
+

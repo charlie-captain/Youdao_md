@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ll_bg"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/Interprint"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/edit_search">
+
+            <TextView
+                android:id="@+id/word_big"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="20dp"
+                android:layout_toStartOf="@+id/listbook_add"
+                android:textColor="@color/text_color"
+                android:textSize="40sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/listbook_add"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="40dp"
+                android:layout_marginTop="28dp"
+                android:background="@drawable/listbook_add_delete_selector"
+                android:visibility="invisible" />
+
+            <RelativeLayout
+                android:id="@+id/sound_ly"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/word_big">
+
+
+                <LinearLayout
+                    android:id="@+id/en_ly"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="20dp"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/english"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:background="@drawable/sound_selector"
+                        android:scaleType="fitCenter" />
+
+                    <TextView
+                        android:id="@+id/english_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="1dp"
+                        android:textSize="18sp" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/english_text_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/en_ly"
+                    android:layout_marginStart="10dp"
+                    android:layout_toEndOf="@+id/en_ly"
+                    android:text="/"
+                    android:textColor="@color/english_text_back"
+                    android:textSize="20sp"
+                    android:visibility="gone" />
+
+
+                <LinearLayout
+                    android:id="@+id/am_ly"
+                    android:layout_width="wrap_content"
+                    android:layout_height="25dp"
+                    android:layout_alignBottom="@+id/en_ly"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toEndOf="@+id/english_text_back"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/american"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:background="@drawable/sound_selector" />
+
+                    <TextView
+                        android:id="@+id/american_text"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:layout_marginTop="1dp"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+            </RelativeLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/sound_ly"
+                android:layout_marginBottom="15dp">
+
+                <TextView
+                    android:id="@+id/word_output"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginBottom="30dp"
+                    android:layout_marginLeft="9dp"
+                    android:layout_marginRight="9dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/main_bg"
+                    android:lineSpacingExtra="9dp"
+                    android:padding="10dp"
+                    android:textColor="@color/text_color"
+                    android:textSize="16sp" />
+
+
+            </ScrollView>
+
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="color_black">#000000</color>
+    <color name="lightwhite">#999999</color>
+    <color name="white">#FFFFFF</color>
+    <color name="gray">#bebebe</color>
+    <color name="english_text_back">#818181</color>
+    <color name="color_item2_text">#9b9b9b</color>
+    <color name="color_item1_text">#636363</color>
+    <color name="item">#e1e1e1</color>
+    <color name="line">#dadada</color>
+    <color name="cool_bg">#56000000</color>
+    <color name="main_ly">#66dadada</color>
+    <color name="layout_bg">#b1dcdcdc</color>
+    <color name="layout_bg_shadow">#c7cac8c2</color>
+    <color name="listview_line">#aeaeae</color>
+    <color name="text_color">#5c5c5c</color>
+    <color name="ll_bg">#f1f1f1</color>
+    <color name="transparent_background">#50000000</color>
+    <color name="shaddow">#ed252222</color>
+    <color name="transparent">#00000000</color>
+    <color name="main_red">#af0d38</color>
+    <color name="red">#ff0000</color>
+    <color name="black">#000000</color>
+    <color name="light_blue">#298cdc</color>
+    <color name="text_bottom">#363636</color>
+    <color name="text_color_light">#808080</color>
+
+
+
+
+</resources>

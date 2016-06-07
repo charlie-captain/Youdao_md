@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.SwipeRefreshLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main_swipeRefresh"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/main_ly">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:src="@drawable/main_picture"
+                android:scaleType="fitXY"
+                />
+
+            <LinearLayout
+                android:id="@+id/main_search"
+                android:layout_width="330dp"
+                android:layout_height="45dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/imageView"
+                android:layout_gravity="center"
+                android:animateLayoutChanges="true"
+                android:background="@drawable/main_search_bg"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/word_edit"
+                    android:layout_width="210dp"
+                    android:layout_height="30dp"
+                    android:layout_margin="10dp"
+                    android:paddingStart="15dp"
+                    android:text="@string/edit_your_word"
+                    android:textColor="@color/color_item2_text"
+                    android:textSize="19sp" />
+
+                <ImageView
+                    android:id="@+id/word_search_btn_search"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="7dp"
+                    android:layout_marginLeft="40dp"
+                    android:background="@drawable/search_red" />
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:id="@+id/main_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/main_search"
+                android:layout_marginTop="8dp"
+                android:visibility="visible">
+
+                <TextView
+                    android:id="@+id/main_sentence"
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:paddingStart="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingEnd="10dp"
+                    android:textStyle="italic"
+                    android:lineSpacingExtra="2dp"
+                    android:textColor="@color/text_color"
+                    android:textSize="18sp" />
+
+
+                <TextView
+                    android:id="@+id/main_chinese"
+                    android:layout_width="340dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/main_sentence"
+                    android:layout_centerHorizontal="true"
+                    android:paddingStart="10dp"
+                    android:paddingTop="5dp"
+                    android:paddingEnd="10dp"
+                    android:paddingBottom="10dp"
+
+                    android:lineSpacingExtra="2dp"
+                    android:textColor="@color/text_color"
+                    android:textStyle="italic"
+                    android:textSize="15dp" />
+
+                <LinearLayout
+                    android:id="@+id/main_sound"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/main_chinese"
+                    android:layout_marginLeft="20dp"
+                    android:visibility="invisible">
+
+                    <ImageView
+                        android:id="@+id/content_mp3"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:background="@drawable/sound_selector"
+                        android:scaleType="fitCenter" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/play_the_sentence"
+                        android:textSize="18sp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+
+</android.support.v4.widget.SwipeRefreshLayout>

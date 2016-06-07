@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/appwidget_ly"
+    android:layout_width="310dp"
+    android:layout_height="45dp"
+    android:layout_below="@+id/imageView"
+    android:animateLayoutChanges="true"
+    android:background="@drawable/main_search_bg"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/word_edit"
+        android:layout_width="210dp"
+        android:layout_height="30dp"
+        android:layout_margin="10dp"
+        android:paddingStart="15dp"
+        android:text="@string/edit_your_word"
+        android:textColor="@color/color_item2_text"
+        android:textSize="19sp" />
+
+    <ImageView
+        android:id="@+id/word_search_btn_search"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="7dp"
+        android:background="@drawable/search_img" />
+
+</LinearLayout>

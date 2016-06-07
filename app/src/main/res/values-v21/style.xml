@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ImageTranslucentTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowTranslucentStatus">false</item>
+        <item name="android:windowTranslucentNavigation">false</item>
+        <!--Android 5.x开始需要把颜色设置透明，否则导航栏会呈现系统默认的浅灰色-->
+        <item name="android:statusBarColor">@android:color/black</item>
+        <item name="android:editTextStyle">@style/edittextstyle</item>
+
+    </style>
+
+    <style name="TransCurrent" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@color/transparent_background</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:statusBarColor">@color/black</item>
+        <item name="android:editTextStyle">@style/edittextstyle</item>
+    </style>
+
+
+    <style name="ListbookDialog" parent="Theme.AppCompat.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:windowBackground">@color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+
+    <style name="Reciteword" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:statusBarColor">@color/light_blue</item>
+    </style>
+
+
+
+    <style name="edittextstyle" parent="Widget.AppCompat.EditText">
+        <item name="android:background">@drawable/edittext_line</item>
+    </style>
+
+    <style name="common_horizontal_division_line_style">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">0.1dp</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">#dddddd</item>
+    </style>
+
+
+</resources>
